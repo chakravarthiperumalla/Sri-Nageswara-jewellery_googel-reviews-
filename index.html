@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Nageswara Jewellers · Share your experience</title>
+<meta name="description" content="Sri Nageswara Jewellers, Gandhinagar, Bhimavaram — gold and silver jewellery. Share your experience on Google in a few taps.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#5A1824">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%235A1824'/%3E%3Cpath d='M18 26l7-9h14l7 9-14 21z' fill='none' stroke='%23E2C27A' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#5A1824;
+  --maroon-dark:#411019;
+  --maroon-soft:#7A2434;
+  --gold:#B8892E;
+  --gold-light:#E2C27A;
+  --ink:#2B1A1D;
+  --body:#5B4A4D;
+  --muted:#7C6B6E;
+  --wa:#25D366;
+  --bg:#FBF6EC;
+  --tint:#F6ECD6;
+  --card:#FFFFFF;
+  --line:#E9DDC4;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--body);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif}
+
+/* header */
+header.bar{background:var(--maroon-dark);padding:14px 16px;border-bottom:2px solid var(--gold)}
+.barin{max-width:580px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.mono{width:46px;height:46px;flex:0 0 46px;border-radius:50%;display:grid;place-items:center;
+  border:1.5px solid var(--gold-light);color:var(--gold-light);
+  font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:20px;letter-spacing:.02em}
+.wordmark{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:21px;color:#fff;
+  line-height:1.15;letter-spacing:.01em}
+.wordmark span{display:block;font-family:Inter,system-ui,sans-serif;font-weight:500;font-size:11px;
+  color:var(--gold-light);letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
+
+/* hero */
+.hero{background:
+   radial-gradient(700px 260px at 50% -30%,rgba(226,194,122,.28),transparent 70%),
+   linear-gradient(180deg,var(--maroon),var(--maroon-dark));
+  padding:34px 16px 46px;text-align:center;color:#F7EBD2}
+.hero-in{max-width:580px;margin:0 auto}
+.orn{display:block;width:92px;height:auto;margin:0 auto 14px}
+.eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold-light);border:1px solid rgba(226,194,122,.5);padding:5px 13px;border-radius:999px}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(31px,8.4vw,44px);font-weight:700;color:#fff;
+  line-height:1.12;letter-spacing:.005em;margin:15px 0 11px}
+h1 em{font-style:normal;color:var(--gold-light)}
+.lede{font-size:15.5px;max-width:420px;margin:0 auto;color:#EBDDC0}
+.rule{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:20px;color:var(--gold-light)}
+.rule i{display:block;height:1px;width:56px;background:linear-gradient(90deg,transparent,var(--gold-light))}
+.rule i:last-child{background:linear-gradient(270deg,transparent,var(--gold-light))}
+.rule svg{width:12px;height:12px}
+
+/* layout */
+.wrap{max-width:580px;margin:0 auto;padding:0 16px 46px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 20px;
+  margin-top:16px;box-shadow:0 1px 3px rgba(90,24,36,.06)}
+.card.roomy{padding:28px 20px 26px}
+.card.roomy h2{margin-bottom:22px}
+.card:first-child{margin-top:-24px;position:relative}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:25px;font-weight:700;color:var(--maroon);
+  letter-spacing:.005em;margin-bottom:8px;line-height:1.2}
+.sub{font-size:14px;color:var(--muted);margin-bottom:15px}
+.about p{font-size:15px;margin-bottom:11px}
+.cats{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.cat{font-size:12.5px;font-weight:500;color:var(--maroon);background:var(--tint);
+  border:1px solid rgba(184,137,46,.4);padding:6px 12px;border-radius:999px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.fact{background:#FDFAF2;border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-size:13px;color:var(--ink)}
+.fact b{display:block;font-size:10.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:2px}
+.addr{margin-top:15px;font-size:14px;color:var(--ink);background:#FDFAF2;border:1px solid var(--line);
+  border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:12px 14px}
+
+/* review builder */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 14px}
+.grouplab{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);margin:2px 0 8px}
+.chip{font:inherit;font-size:13px;font-weight:500;padding:9px 14px;border-radius:999px;cursor:pointer;
+  border:1px solid var(--line);background:#fff;color:var(--ink);transition:.15s;min-height:38px}
+.chip.prod[aria-pressed="false"]{background:var(--tint);border-color:rgba(184,137,46,.4)}
+.chip:hover{border-color:var(--gold)}
+.chip[aria-pressed="true"]{background:var(--maroon);color:#fff;border-color:var(--maroon)}
+label.lbl{display:block;font-size:13px;font-weight:500;color:var(--muted);margin-bottom:7px}
+textarea{width:100%;min-height:96px;resize:vertical;font:inherit;font-size:15px;color:var(--ink);
+  padding:14px;border:1px solid var(--line);border-radius:var(--r);background:#FDFAF2;line-height:1.55}
+textarea:focus{outline:2px solid var(--gold);outline-offset:1px;background:#fff}
+.row{display:flex;gap:10px;margin-top:13px;flex-wrap:wrap}
+.btn{font:inherit;font-weight:600;font-size:15px;cursor:pointer;border-radius:999px;padding:13px 20px;
+  border:1px solid transparent;text-align:center;min-height:48px;transition:.15s}
+.btn.ghost{background:#fff;color:var(--ink);border-color:var(--line);flex:0 0 auto}
+.btn.ghost:hover{border-color:var(--maroon)}
+.btn.main{background:var(--maroon);color:#fff;flex:1 1 190px;box-shadow:0 4px 12px rgba(90,24,36,.28);
+  border-color:var(--gold)}
+.btn.main:hover{background:var(--maroon-dark)}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible,.chip:focus-visible,.ic:focus-visible,.wabtn:focus-visible,.map:focus-visible{
+  outline:2px solid var(--gold);outline-offset:2px}
+.note{font-size:12.5px;color:var(--muted);margin-top:13px}
+.note.alt{margin-top:8px}
+.note.alt a{color:var(--maroon);font-weight:600}
+.manual{margin-top:13px;font-size:13px;color:var(--ink);background:#FFF8E6;
+  border:1px solid #F0D9A0;border-radius:10px;padding:11px 13px;line-height:1.55}
+.manual a{color:var(--maroon);font-weight:600;white-space:nowrap}
+
+/* contact */
+.icons{display:flex;justify-content:center;flex-wrap:wrap;gap:24px 6px;padding:4px 0;max-width:330px;margin:0 auto}
+.icw{flex:0 0 88px;display:flex;flex-direction:column;align-items:center;gap:11px;text-decoration:none}
+.iclab{font-size:11.5px;color:var(--muted);line-height:1.35;text-align:center;font-weight:500}
+.ic{width:54px;height:54px;flex:0 0 54px;border-radius:50%;display:grid;place-items:center;text-decoration:none;
+  background:var(--maroon);color:#fff;transition:transform .15s}
+.ic:hover{transform:translateY(-3px)}
+.ic.gold{background:var(--gold)} .ic.green{background:var(--wa)}
+.ic.ig{background:linear-gradient(45deg,#F9CE34 5%,#EE2A7B 50%,#6228D7 95%)}
+.ic.fb{background:#1877F2}
+.ic svg{width:23px;height:23px}
+.wabtn{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:22px;
+  background:var(--wa);color:#fff;text-decoration:none;font-weight:600;font-size:15px;
+  padding:13px;border-radius:999px;min-height:48px}
+.wabtn svg{width:19px;height:19px;fill:currentColor}
+
+/* map */
+.map{display:block;text-decoration:none;color:inherit;border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--line)}
+.mapart{height:142px;position:relative;background:
+  linear-gradient(90deg,transparent 46%,rgba(90,24,36,.08) 46% 50%,transparent 50%),
+  linear-gradient(0deg,transparent 56%,rgba(90,24,36,.08) 56% 60%,transparent 60%),
+  linear-gradient(40deg,transparent 38%,rgba(90,24,36,.06) 38% 42%,transparent 42%),#F6ECD6}
+.pin{position:absolute;left:50%;top:46%;transform:translate(-50%,-100%) rotate(-45deg);width:30px;height:30px;
+  background:var(--maroon);border-radius:50% 50% 50% 0;border:2px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.22)}
+.pin::after{content:"";position:absolute;inset:8px;background:var(--gold-light);border-radius:50%}
+.mapbody{padding:14px 16px;background:#fff}
+.mapbody strong{display:block;font-size:15px;color:var(--ink)}
+.mapbody span{display:block;font-size:13.5px;color:var(--muted);margin-top:3px}
+.mapcta{display:inline-block;margin-top:10px;font-weight:600;font-size:14px;color:var(--maroon)}
+
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,40px);opacity:0;background:var(--maroon-dark);
+  color:#fff;padding:12px 18px;border-radius:999px;font-size:14px;transition:.25s;pointer-events:none;
+  max-width:90vw;text-align:center;z-index:30;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.toast.show{transform:translate(-50%,0);opacity:1}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+@media(max-width:330px){.facts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="barin">
+    <div class="mono" aria-hidden="true">SN</div>
+    <div class="wordmark">Sri Nageswara Jewellers<span>Gandhinagar &middot; Bhimavaram</span></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-in">
+    <svg class="orn" viewBox="0 0 96 80" fill="none" stroke="#E2C27A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+      <path d="M26 28 36 14h24l10 14-22 40z"/>
+      <path d="M26 28h44M36 14l12 14 12-14M48 28l-8 0M48 28 40 28M40 28l8 40 8-40"/>
+      <path d="M12 12v8M8 16h8M84 8v6M81 11h6M82 46v8M78 50h8" stroke-width="1.6"/>
+    </svg>
+    <div class="eyebrow">We'd love your feedback</div>
+    <h1>Found something <em>special</em>?<br>Tell Google about it.</h1>
+    <p class="lede">A quick review helps other families in Bhimavaram find gold and silver jewellery they can trust their eyes on.</p>
+    <div class="rule" aria-hidden="true"><i></i><svg viewBox="0 0 12 12" fill="#E2C27A"><path d="M6 0l1.6 4.4L12 6 7.6 7.6 6 12 4.4 7.6 0 6l4.4-1.6z"/></svg><i></i></div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section class="card about">
+    <h2>About Sri Nageswara Jewellers</h2>
+    <p>Sri Nageswara Jewellers is a jewellery showroom in Gandhinagar, Bhimavaram, offering gold and silver jewellery for weddings, festivals and everyday wear.</p>
+    <p>Visit the showroom on Main Road near Venkatarama Theatre to browse earrings, rings and more in person.</p>
+    <div class="cats">
+      <span class="cat">Gold Jewellery</span>
+      <span class="cat">Silver Jewellery</span>
+      <span class="cat">Earrings</span>
+      <span class="cat">Gold Rings</span>
+      <span class="cat">Jewellery Showroom</span>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>Shop</b>In-store shopping</div>
+      <div class="fact"><b>Delivery</b>Same day delivery</div>
+    </div>
+    <p class="addr">Door No 23-8-60/1, Near Venkatarama Theatre, Main Road, Gandhinagar, Bhimavaram, Andhra Pradesh 534201</p>
+  </section>
+
+  <section class="card">
+    <h2>Share your experience</h2>
+    <p class="sub">Tap what matched your visit, edit the draft in your own words, then post it on Google.</p>
+    <p class="grouplab">What was good</p>
+    <div class="chips" id="chips" role="group" aria-label="What was good?">
+      <button class="chip" aria-pressed="false" data-k="collection">Lovely collection</button>
+      <button class="chip" aria-pressed="false" data-k="designs">Beautiful designs</button>
+      <button class="chip" aria-pressed="false" data-k="price">Fair price</button>
+      <button class="chip" aria-pressed="false" data-k="staff">Helpful staff</button>
+      <button class="chip" aria-pressed="false" data-k="quality">Good finishing</button>
+      <button class="chip" aria-pressed="false" data-k="showroom">Pleasant showroom</button>
+    </div>
+    <p class="grouplab">Jewellery</p>
+    <div class="chips" id="prodchips" role="group" aria-label="Which jewellery?">
+      <button class="chip prod" aria-pressed="false" data-k="p_gold">Gold jewellery</button>
+      <button class="chip prod" aria-pressed="false" data-k="p_silver">Silver jewellery</button>
+      <button class="chip prod" aria-pressed="false" data-k="p_earrings">Earrings</button>
+      <button class="chip prod" aria-pressed="false" data-k="p_rings">Rings</button>
+    </div>
+    <label class="lbl" for="t">Your review (edit freely)</label>
+    <textarea id="t" aria-describedby="hint"></textarea>
+    <div class="row">
+      <button class="btn ghost" id="again" type="button">&#8635; New draft</button>
+      <button class="btn main" id="go" type="button">Copy &amp; open Google reviews</button>
+    </div>
+    <p class="manual" id="manual" hidden>Your review is selected above &mdash; copy it
+      (<b>Ctrl/Cmd&nbsp;+&nbsp;C</b>, or long&#8209;press &rarr; Copy), then
+      <a id="manualLink" href="#" target="_blank" rel="noopener">open Google reviews &rarr;</a></p>
+    <p class="note" id="hint"></p>
+    <p class="note alt"><span id="altText">Already signed in to Google in this browser? </span>
+      <a id="directLink" href="#" target="_blank" rel="noopener">Open the review box in your browser &rarr;</a></p>
+  </section>
+
+  <section class="card roomy" id="socialCard" hidden>
+    <h2 style="text-align:center">Follow us</h2>
+    <div class="icons" id="socialRow"></div>
+  </section>
+
+  <section class="card roomy">
+    <h2 style="text-align:center">Get in touch</h2>
+    <div class="icons" id="contactRow"></div>
+    <a class="wabtn" id="waBtn" href="#" target="_blank" rel="noopener" hidden>
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>
+      Chat on WhatsApp
+    </a>
+  </section>
+
+  <section class="card">
+    <h2>Visit the showroom</h2>
+    <a class="map" id="mapLink" href="#" target="_blank" rel="noopener">
+      <div class="mapart"><div class="pin"></div></div>
+      <div class="mapbody">
+        <strong>Sri Nageswara Jewellers</strong>
+        <span>Main Road, Near Venkatarama Theatre, Gandhinagar, Bhimavaram</span>
+        <span class="mapcta">Get directions on Google Maps &rarr;</span>
+      </div>
+    </a>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ------------------------------------------------------------------
+   SHOP DETAILS - fill these in when you have them.
+   PHONE: 10-digit Indian mobile number, digits only (e.g. "9876543210").
+          Empty = the Call and WhatsApp buttons stay hidden.
+   SOCIAL: the shop's real profile URLs. Empty = that icon is not shown,
+          and the whole "Follow us" card hides if all are empty.
+   ------------------------------------------------------------------ */
+const PHONE = "";
+const SOCIAL = {
+  instagram: "",
+  facebook:  ""
+};
+const JUSTDIAL = "https://www.justdial.com/Bhimavaram/Sri-Nageswara-Jewellers-Near-Venkatarama-Theatre-Gandhinagar/9999P8816-8816-130829123825-V8Q6_BZDET";
+/* ---------------------------------------------------------------- */
+
+const PLACE_ID = "ChIJ6b02o-HTNzoRg3HrOFfE_6M";
+const CID = "11817379826139623811";
+const LAT = 16.5441001, LNG = 81.5234529;
+const SHOP = "Sri Nageswara Jewellers";
+
+/* ------------------------------------------------------------------
+   BEST OPTION: if the owner gives you the official review short link
+   from their Google Business Profile (Home > "Ask for reviews", it
+   looks like https://g.page/r/XXXXXXXX/review), paste it here. That
+   one opens the review box in a single tap and handles the app
+   handover itself. Leave it empty and the page uses the links below.
+   ------------------------------------------------------------------ */
+const GBP_REVIEW = "";
+
+/* The web review box. Opens straight on the write-a-review dialog, but a
+   browser that is not signed in to Google shows a sign-in page first. */
+const REVIEW_URL = "https://search.google.com/local/writereview?placeid=" + PLACE_ID;
+
+/* The shop on Google Maps. On a phone this opens the Maps app, where the
+   customer is already signed in - no sign-in page - and "Write a review"
+   sits under Reviews. */
+const MAPS_URL = "https://maps.google.com/?cid=" + CID;
+
+const ANDROID = /Android/i.test(navigator.userAgent);
+const IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+const onPhone = ANDROID || IOS;
+
+/* The Google Maps Android app declares a verified intent filter for
+   host search.google.com, path /local/writereview/mobile - the review
+   composer itself. Wrapping that path in an intent that names the Maps
+   package opens the review sheet directly in the app. Undocumented by
+   Google, so the browser fallback matters. */
+const REVIEW_MOBILE = "search.google.com/local/writereview/mobile?placeid=" + PLACE_ID;
+const MAPS_INTENT = "intent://" + REVIEW_MOBILE +
+  "#Intent;scheme=https;package=com.google.android.apps.maps;S.browser_fallback_url=" +
+  encodeURIComponent(GBP_REVIEW || REVIEW_URL) + ";end";
+
+function reviewTarget(){
+  if (ANDROID) return MAPS_INTENT;   // review sheet inside the Maps app
+  if (IOS) return MAPS_URL;          // universal link: the shop in the Maps app
+  return GBP_REVIEW || REVIEW_URL;   // desktop: the web review box
+}
+const DIR_URL = "https://www.google.com/maps/dir/?api=1&destination=" + LAT + "," + LNG +
+                "&destination_place_id=" + PLACE_ID;
+document.getElementById("mapLink").href = DIR_URL;
+
+/* Short phrasings on purpose: a scan should produce a one or two line
+   review, which is what most customers actually write. */
+const PARTS = {
+  collection: ["Lovely collection to choose from.", "Wide range of designs.",
+               "Nice collection of jewellery.", "Plenty of options to choose from."],
+  designs:    ["Beautiful, neat designs.", "Elegant designs for every occasion.",
+               "Good mix of traditional and modern designs.", "The designs are lovely."],
+  price:      ["Prices are fair.", "Good value for the money.",
+               "Reasonable rates.", "Honest pricing."],
+  staff:      ["Staff were polite and helpful.", "Friendly, patient service.",
+               "Helpful staff, no pressure.", "Courteous staff."],
+  quality:    ["Neat finishing on every piece.", "Good craftsmanship.",
+               "Well finished pieces.", "The finishing is very good."],
+  showroom:   ["Clean, comfortable showroom.", "Easy to find on Main Road.",
+               "Pleasant place to shop.", "Easy to reach in Gandhinagar."],
+  // the jewellery itself
+  p_gold:     ["Good gold jewellery collection.", "Nice gold ornaments.",
+               "The gold designs are lovely.", "Found lovely gold pieces."],
+  p_silver:   ["Good silver jewellery range.", "Nice silver items.",
+               "The silver designs are lovely.", "Found nice silver pieces."],
+  p_earrings: ["Lovely earring designs.", "Nice earrings, many designs.",
+               "Found beautiful earrings.", "Good range of earrings."],
+  p_rings:    ["Nice ring designs.", "Good range of rings.",
+               "Found a lovely ring here.", "The rings are neatly finished."]
+};
+const CLOSERS = ["Recommended.", "Will visit again.", "Highly recommended.",
+                 "Worth a visit.", "Happy with the visit.", "Thank you."];
+const MAX_LEN = 66;    // two lines even in a 360px-wide box
+
+/* Two reviews in every ten are fuller, three or four lines, so a shop's
+   reviews do not all read the same length. These are the longer phrasings. */
+const LONG_PARTS = {
+  collection: ["There is a lovely collection to choose from, with something for every budget.",
+               "A wide range of jewellery designs to look through.",
+               "Plenty of options to choose from, we did not feel rushed."],
+  designs:    ["The designs are elegant, a good mix of traditional and modern.",
+               "Beautiful, neat designs that suit weddings and festivals.",
+               "We liked the designs, there is a lot of variety."],
+  price:      ["Prices are fair for what you get.",
+               "Good value for the money and the pricing felt honest.",
+               "Rates were reasonable and everything was explained clearly."],
+  staff:      ["The staff were polite, patient and happy to show us more pieces.",
+               "Friendly service and no pressure to buy.",
+               "Helpful staff who took time to explain the options."],
+  quality:    ["The finishing on the pieces is neat and careful.",
+               "Good craftsmanship, every piece looked well made.",
+               "The pieces are well finished and feel solid."],
+  showroom:   ["The showroom is clean and comfortable, easy to find on Main Road.",
+               "A pleasant place to shop, close to Venkatarama Theatre.",
+               "Easy to reach in Gandhinagar and nice to browse in."],
+  p_gold:     ["The gold jewellery collection is very good.",
+               "We found some lovely gold pieces here.",
+               "Beautiful gold ornaments in many designs."],
+  p_silver:   ["The silver jewellery range is good, with nice designs.",
+               "We found some lovely silver pieces here.",
+               "Good silver items at fair prices."],
+  p_earrings: ["The earrings come in many lovely designs.",
+               "We found beautiful earrings after looking through a good range.",
+               "Nice earrings in both light and festive styles."],
+  p_rings:    ["The rings are neatly finished and come in nice designs.",
+               "A good range of rings to choose from.",
+               "We found a lovely ring here after trying a few."]
+};
+const LONG_OPENERS = ["Visited Sri Nageswara Jewellers in Gandhinagar, Bhimavaram.",
+                      "Dropped by Sri Nageswara Jewellers near Venkatarama Theatre.",
+                      "Went to Sri Nageswara Jewellers in Bhimavaram recently.",
+                      "Stopped by Sri Nageswara Jewellers on Main Road, Gandhinagar.",
+                      "Checked out Sri Nageswara Jewellers in Bhimavaram."];
+const LONG_CLOSERS = ["Would recommend it to anyone looking for jewellery in Bhimavaram.",
+                      "Happy to recommend them.",
+                      "Will visit again for the next occasion.",
+                      "A good option for jewellery in Gandhinagar."];
+const LONG_MAX_LINES = 4, LONG_MIN_LINES = 3;
+
+const ta = document.getElementById("t");
+const chips = [...document.querySelectorAll(".chip")];
+const pick = a => a[Math.floor(Math.random() * a.length)];
+let ORDER = "good-first";
+
+/* A fresh draft on every load and every scan. The chips that start selected
+   are shuffled too, so the shape of the review changes, not just the wording.
+   The last draft is remembered on this device and never repeated twice
+   in a row. */
+const LAST_KEY = "sn_last_draft";
+const CYCLE_KEY = "sn_cycle";
+
+/* Exactly two of every ten drafts are long, in an order that is shuffled
+   each time round, so it is a real 2-in-10 rather than a 20% chance that
+   drifts. The position is kept on the device and advances once per visit. */
+function nextIsLong(){
+  let cyc, i;
+  try {
+    const raw = JSON.parse(localStorage.getItem(CYCLE_KEY) || "null");
+    if (raw && Array.isArray(raw.c) && raw.c.length === 10 && raw.i < 10) {
+      cyc = raw.c; i = raw.i;
+    }
+  } catch(e){}
+  if (!cyc) {
+    cyc = [1,1,0,0,0,0,0,0,0,0];
+    for (let j = cyc.length - 1; j > 0; j--) {
+      const k = Math.floor(Math.random() * (j + 1));
+      [cyc[j], cyc[k]] = [cyc[k], cyc[j]];
+    }
+    i = 0;
+  }
+  const long = cyc[i] === 1;
+  const ni = i + 1;
+  try {
+    localStorage.setItem(CYCLE_KEY, ni >= 10 ? "null" : JSON.stringify({ c: cyc, i: ni }));
+  } catch(e){}
+  return long;
+}
+let LONG_DRAFT = false;
+function lastDraft(){ try { return localStorage.getItem(LAST_KEY) || ""; } catch(e){ return ""; } }
+function remember(t){ try { localStorage.setItem(LAST_KEY, t); } catch(e){} }
+
+/* Measures how many lines a string really takes in the box at this screen
+   width, so the cap holds on a narrow phone too, not just by character count. */
+let mirror = null;
+function linesOf(text){
+  try {
+    const cs = getComputedStyle(ta);
+    if (!mirror) {
+      mirror = document.createElement("div");
+      mirror.style.cssText = "position:absolute;visibility:hidden;left:-9999px;top:0;" +
+                             "white-space:pre-wrap;word-wrap:break-word";
+      document.body.appendChild(mirror);
+    }
+    mirror.style.width = (ta.clientWidth - parseFloat(cs.paddingLeft) -
+                          parseFloat(cs.paddingRight)) + "px";
+    mirror.style.font = cs.font;
+    mirror.style.lineHeight = cs.lineHeight;
+    mirror.textContent = text;
+    const lh = parseFloat(cs.lineHeight);
+    return lh ? Math.round(mirror.offsetHeight / lh) : 1;
+  } catch(e) { return 1; }
+}
+
+/* Once the customer picks points themselves, every one they picked is
+   included - their choice wins over the length cap. */
+let userPicked = false;
+
+function shortestOf(arr){ return arr.reduce((a, b) => b.length < a.length ? b : a); }
+
+/* Takes keys, not phrasings, so it can reach for a shorter wording when the
+   two-line cap would otherwise squeeze out the second point. */
+function buildShort(keys){
+  let bits = null;
+  for (let i = 0; i < 12; i++) {                       // a wording pair that fits
+    const cand = keys.map(k => pick(PARTS[k]));
+    if (cand.join(" ").length <= MAX_LEN && linesOf(cand.join(" ")) <= 2) { bits = cand; break; }
+  }
+  if (!bits) {                                         // else the shortest of each
+    const cand = keys.map(k => shortestOf(PARTS[k]));
+    if (linesOf(cand.join(" ")) <= 2) bits = cand;
+  }
+  if (!bits) bits = [pick(PARTS[keys[0]])];            // genuinely no room for both
+  let t = bits.join(" ");
+  const close = pick(CLOSERS);
+  const withClose = t + " " + close;
+  // the sign-off is the first thing to go, never the jewellery
+  if (t.length + close.length + 1 <= MAX_LEN && linesOf(withClose) <= 2) t = withClose;
+  while (linesOf(t) > 2 && bits.length > 1) { bits.pop(); t = bits.join(" "); }
+  return t;
+}
+
+function buildLong(keys){
+  let t = pick(LONG_OPENERS);
+  const used = [];
+  for (const k of keys) {
+    const next = t + " " + pick(LONG_PARTS[k]);
+    if (linesOf(next) <= LONG_MAX_LINES) { t = next; used.push(k); }
+  }
+  // a review should name the jewellery, so make room for the shortest line if none fit
+  const prodKeys = chips.filter(c => c.classList.contains("prod")).map(c => c.dataset.k);
+  if (!used.some(k => prodKeys.indexOf(k) !== -1)) {
+    const want = keys.filter(k => prodKeys.indexOf(k) !== -1);
+    for (const k of want) {
+      const next = t + " " + shortestOf(LONG_PARTS[k]);
+      if (linesOf(next) <= LONG_MAX_LINES) { t = next; used.push(k); break; }
+    }
+  }
+  const close = pick(LONG_CLOSERS);
+  if (linesOf(t + " " + close) <= LONG_MAX_LINES) t += " " + close;
+  // if it came out short of three lines, add another point that still fits
+  if (linesOf(t) < LONG_MIN_LINES) {
+    for (const c of chips) {
+      const k = c.dataset.k;
+      if (keys.indexOf(k) !== -1 || !LONG_PARTS[k]) continue;
+      const next = t + " " + pick(LONG_PARTS[k]);
+      if (linesOf(next) <= LONG_MAX_LINES) {
+        t = next;
+        c.setAttribute("aria-pressed", "true");   // keep the chips matching the text
+      }
+      if (linesOf(t) >= LONG_MIN_LINES) break;
+    }
+  }
+  return t;
+}
+
+/* Interleave good / jewellery / good / jewellery, so if the line cap trims the
+   tail both groups are still represented in what survives. */
+function selectedKeys(){
+  const on = chips.filter(c => c.getAttribute("aria-pressed") === "true");
+  if (userPicked) return on.map(c => c.dataset.k);
+  const good = on.filter(c => !c.classList.contains("prod"));
+  const prod = on.filter(c =>  c.classList.contains("prod"));
+  const a = ORDER === "product-first" ? prod : good;
+  const b = ORDER === "product-first" ? good : prod;
+  const out = [];
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    if (a[i]) out.push(a[i]);
+    if (b[i]) out.push(b[i]);
+  }
+  return out.map(c => c.dataset.k);
+}
+
+function buildDraft(){
+  const on = selectedKeys();
+  if (!on.length) return "";
+  if (userPicked) {
+    const bank = LONG_DRAFT ? LONG_PARTS : PARTS;
+    const body = on.map(k => pick(bank[k])).join(" ");
+    return body + " " + pick(LONG_DRAFT ? LONG_CLOSERS : CLOSERS);
+  }
+  return LONG_DRAFT ? buildLong(on) : buildShort(on);
+}
+
+function compose(){
+  let t = buildDraft();
+  for (let i = 0; i < 20 && t && t === lastDraft(); i++) t = buildDraft();
+  ta.value = t;
+  if (t) remember(t);
+}
+function shuffle(a){
+  const r = a.slice();
+  for (let i = r.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [r[i], r[j]] = [r[j], r[i]];
+  }
+  return r;
+}
+
+/* Every review draws from both groups: something that was good, and the
+   jewellery it was good about. Long drafts take two of each, short ones one
+   of each, and the line cap still decides what survives. */
+function shuffleChips(){
+  const good = shuffle(chips.filter(c => !c.classList.contains("prod")));
+  const prod = shuffle(chips.filter(c =>  c.classList.contains("prod")));
+  const perSide = LONG_DRAFT ? 2 : 1;
+  const chosen = good.slice(0, perSide).concat(prod.slice(0, perSide));
+  chips.forEach(c => c.setAttribute("aria-pressed", chosen.includes(c) ? "true" : "false"));
+  ORDER = Math.random() < 0.5 ? "good-first" : "product-first";
+}
+chips.forEach(c => c.addEventListener("click", () => {
+  c.setAttribute("aria-pressed", c.getAttribute("aria-pressed") === "true" ? "false" : "true");
+  userPicked = true;
+  compose();
+}));
+document.getElementById("again").addEventListener("click", compose);
+LONG_DRAFT = nextIsLong();   // once per visit, so 2 of every 10 scans are long
+shuffleChips();
+compose();
+
+const toast = document.getElementById("toast");
+let tt;
+function say(m){
+  toast.textContent = m; toast.classList.add("show");
+  clearTimeout(tt); tt = setTimeout(() => toast.classList.remove("show"), 3200);
+}
+/* Copy must happen while THIS page still has focus. Opening the Google tab
+   first steals focus, and a browser refuses a clipboard write from an
+   unfocused document. So: copy, then open. */
+function selectDraft(){
+  try { ta.focus(); ta.select(); ta.setSelectionRange(0, ta.value.length); } catch(e){}
+}
+function copySync(text){
+  const t = document.createElement("textarea");
+  t.value = text;
+  t.setAttribute("readonly", "");
+  t.style.cssText = "position:fixed;left:-9999px;top:0;font-size:16px;opacity:0";
+  document.body.appendChild(t);
+  let ok = false;
+  try {
+    if (/ipad|iphone|ipod/i.test(navigator.userAgent)) {
+      const r = document.createRange();
+      r.selectNodeContents(t);
+      const sel = window.getSelection();
+      sel.removeAllRanges(); sel.addRange(r);
+      t.setSelectionRange(0, text.length);
+    } else {
+      t.select();
+    }
+    ok = document.execCommand("copy");
+  } catch(e) { ok = false; }
+  document.body.removeChild(t);
+  return ok;
+}
+
+/* ---------- follow us (only icons that have a link) ---------- */
+const SOCIAL_META = {
+  instagram: { label: "Instagram", cls: "ig",
+    svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor" stroke="none"/></svg>' },
+  facebook: { label: "Facebook", cls: "fb",
+    svg: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.6V13h2.7v8h3.2z"/></svg>' }
+};
+
+function iconLink(row, cls, href, label, svg, external){
+  const w = document.createElement("div");
+  w.className = "icw";
+  const a = document.createElement("a");
+  a.className = "ic " + cls;
+  a.href = href;
+  a.setAttribute("aria-label", label);
+  if (external) { a.target = "_blank"; a.rel = "noopener"; }
+  a.innerHTML = svg;
+  const cap = document.createElement("span");
+  cap.className = "iclab";
+  cap.textContent = label;
+  w.appendChild(a); w.appendChild(cap); row.appendChild(w);
+}
+
+(function renderSocial(){
+  const row = document.getElementById("socialRow");
+  let n = 0;
+  Object.keys(SOCIAL_META).forEach(key => {
+    const url = (SOCIAL[key] || "").trim();
+    if (!url) return;
+    const m = SOCIAL_META[key];
+    iconLink(row, m.cls, url, m.label, m.svg, true);
+    n++;
+  });
+  document.getElementById("socialCard").hidden = !n;
+})();
+
+/* ---------- get in touch (Call / WhatsApp only when PHONE is set) ---------- */
+(function renderContact(){
+  const row = document.getElementById("contactRow");
+  const phone = (PHONE || "").replace(/\D/g, "").replace(/^(91)?/, "");
+  if (phone.length === 10) {
+    iconLink(row, "", "tel:+91" + phone, "Call",
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M6.6 3h3l1.5 4-2 1.4a12 12 0 0 0 5.5 5.5l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3Z"/></svg>', false);
+    iconLink(row, "green", "https://wa.me/91" + phone, "WhatsApp",
+      '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2a.5.5 0 0 0 0-.5c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.6.6 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg>', true);
+    const wa = document.getElementById("waBtn");
+    wa.href = "https://wa.me/91" + phone;
+    wa.hidden = false;
+  }
+  iconLink(row, "gold", MAPS_URL, "Google listing",
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>', true);
+  iconLink(row, "", JUSTDIAL, "Justdial",
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>', true);
+})();
+
+document.getElementById("go").addEventListener("click", () => {
+  const text = ta.value.trim();
+  if (!text) { say("Tap a point above or write your own review first"); return; }
+
+  // 1. copy first, synchronously, while the page is still focused
+  let ok = copySync(text);
+  // 2. modern API too, best effort - also started before focus moves
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => { ok = true; }).catch(() => {});
+  }
+
+  if (ok) {
+    const target = reviewTarget();
+    say(IOS
+        ? "Review copied. Tap Reviews → Write a review, then paste."
+        : "Review copied. Paste it in the review box and post.");
+    /* On a phone, navigate this tab rather than opening a new one. A popup
+       tab usually stays inside the browser, while a top-level navigation lets
+       Android App Links / iOS Universal Links hand the URL to the Maps app,
+       which is where the customer is already signed in. */
+    if (onPhone) {
+      window.location.href = target;
+    } else {
+      const w = window.open(target, "_blank");
+      if (w) w.opener = null; else window.location.href = target;
+    }
+  } else {
+    // never send them to Google without their text - let them copy by hand
+    selectDraft();
+    document.getElementById("manual").hidden = false;
+    say("Couldn't copy automatically — the review is selected, copy it then tap the link.");
+  }
+});
+
+document.getElementById("manualLink").href = reviewTarget();
+document.getElementById("directLink").href = GBP_REVIEW || REVIEW_URL;
+document.querySelector(".note.alt").hidden = !onPhone;
+if (onPhone) document.getElementById("altText").textContent = "Maps app not installed? ";
+document.getElementById("hint").textContent =
+  ANDROID ? "The Google Maps app opens on the review box for " + SHOP + ". Choose your stars, paste and post. Please write only about a visit you actually made."
+  : IOS   ? "The Google Maps app opens on the shop. Tap Reviews, then Write a review, choose your stars and paste. Please write only about a visit you actually made."
+          : "Google opens on the review box for " + SHOP + ". Choose your stars, paste and post. Please write only about a visit you actually made.";
+</script>
+</body>
+</html>
